@@ -11,8 +11,9 @@ app.use(express.static(path.join(__dirname,'/app/assets/')));
 
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,"/app/index.html"));
-    console.log(__dirname);
+    console.log(process.cwd());
 });
+
 
 app.listen(port,function(err){
     if(err){
@@ -21,4 +22,4 @@ app.listen(port,function(err){
         console.log(chalk.blue('Starting dev server on port :'+port));
         open("http://localhost:"+port);
     }
-})
+});
