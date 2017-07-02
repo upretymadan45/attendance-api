@@ -19,5 +19,8 @@
   "dependencies": {
     "express": "^4.15.3",
     "open": "0.0.5"
+  },
+  "devDependencies": {
+    "chalk": "^2.0.1"
   }
 }
