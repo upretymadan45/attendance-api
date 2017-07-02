@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/upretymadan45/attendance-api/issues"
   },
-  "homepage": "https://github.com/upretymadan45/attendance-api#readme"
+  "homepage": "https://github.com/upretymadan45/attendance-api#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "open": "0.0.5"
+  }
 }
