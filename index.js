@@ -4,9 +4,10 @@ var path = require("path");
 var chalk = require("chalk");
 var cors = require("cors");
 
-var port = 8080;
 
 var app = express();
+
+app.set('port',(process.env.PORT || 5000));
 
 app.use(cors());
 
@@ -28,11 +29,11 @@ app.get('/products',function(req,res){
 });
 
 
-app.listen(port,function(err){
+app.listen(app.get('port'),function(err){
     if(err){
         console.log("error occured");
     } else {
-        console.log(chalk.blue('Starting dev server on port :'+port));
-        open("http://localhost:"+port);
+        console.log(chalk.blue('Starting dev server on port :'+app.get('port')));
+        open("http://localhost:"+app.get('port'));
     }
 });
