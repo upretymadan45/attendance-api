@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/upretymadan45/attendance-api.git"
   },
+  "engine":{
+    "version": "6.11.1" 
+  }
   "author": "",
   "license": "ISC",
   "bugs": {
